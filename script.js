@@ -25,7 +25,7 @@ let details= async(name)=>{
 showCards(data)}
 details();
 function showCards(data){
-    data.articles.map(e => {
+    data.articles.forEach(e => {
         //console.log(e)
         var div=document.createElement("div");
         div.style.display="flex";
